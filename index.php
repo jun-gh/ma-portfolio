@@ -1,0 +1,193 @@
+<!--<?php
+if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
+    if(!headers_sent()) {
+        header("Status: 301 Moved Permanently");
+        header(sprintf(
+            'Location: https://%s%s',
+            $_SERVER['HTTP_HOST'],
+            $_SERVER['REQUEST_URI']
+        ));
+        exit();
+    }
+}
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Martin Abanes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<script src="script/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+</head>
+<body id="myPage">
+
+<div id="menu_icon" class="menu_icon" onclick="myfunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+  <ul class="menus" id="menus">
+    <li><a href="#intro"><i class="fa fa-home" aria-hidden="true"></i> Intro</a></li>
+    <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
+    <li><a href="#projects" ><i class="fa fa-briefcase" aria-hidden="true"></i> Projects</a></li>
+    <li><a href="#features"><i class="fa fa-file-text" aria-hidden="true"></i> Features</a></li>
+    <li><a href="#contact"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+  </ul>  
+
+<section id="intro" class="page_cont">
+
+  <div class="intro_cont">
+  <div class="intro_cont2">
+    <ul class="fly-text hiden">
+      <li>M</li>
+      <li>a</li>
+      <li>r</li>
+      <li>t</li>
+      <li>i</li>     
+      <li>n</li>      
+      <li>A</li>
+      <li>b</li>
+      <li>a</li>
+      <li>n</li>
+      <li>e</li>
+      <li>s</li>      
+    </ul>
+    <br><br><br>
+    <h5 class="post_title">Software Engineer</h5>
+  </div>  
+  </div>
+  
+</section>
+
+<section  id="about" class="page_cont">  
+  <h1 class="page_cont_title">About me</h1>  
+  <p class="content_paragraph">"Martin here, regular guy, happily married with two kids."<br><br>
+
+   I first started as Cashier in a retail store, then worked as Support for DELL & HP Computers. Next, I worked at HCL where I gotback my coding passion (back in school days) by designing Community pages for clients. Then, moved to Acquire as Salesforce Analyst & got exposed in Salesforce API Integration which is seemlessly fun. I also worked with HomeRun Inc. as project based Web Programmer. Currently, I'm working with iScale Solutions Inc. as Software Engineer doing classified/ecommerce sites & app (Android/IOS).
+   <br><br> 
+   It's my passion to program, code & see my work come alive. Doing it day in and dayout is nothing to me since I love it, like Confucius said <i><em>"Find a job that you love and you won't feel working a day in your life."</em></i>
+  </p>
+  <img src="images/mypic.png" class="img-circle" id="aboutpic">
+</section>
+<section  id="projects" class="page_cont">
+  <h1 class="page_cont_title">Projects</h1> 
+  <p class="proj_paragraph">Here are some of my public projects:</p> 
+  <div id="proj-bx" class="project_cont col-lg-4 col-md-4 col-sm-6 col-xs-12 bx"><img class="img-responsive img_bx" src="images/bx.jpg" alt="bx">
+    <div class="project_overlay">
+      <p><span class="proj_title">BasiX</span><br>Income Tracking System    
+      </p>    
+    </div>  
+  </div>
+  <div id="proj-retail" class="project_cont col-lg-4 col-md-4 col-sm-6 col-xs-12 bx"><img class="img-responsive img_retail" src="images/hri_retail.jpg" alt="hri_retail">
+    <div class="project_overlay">
+      <p><span class="proj_title">HomerunInternational</span><br>Dynamic Retail Site    
+      </p>    
+    </div>   
+  </div>   
+  <div id="proj-admin" class="project_cont col-lg-4 col-md-4 col-sm-6 col-xs-12 bx"><img class="img-responsive img_admin" src="images/admin_hri.png" alt="admin_hri">
+    <div class="project_overlay">
+      <p><span class="proj_title">HRI Admin</span><br>MLN BackOffice    
+      </p>    
+    </div>
+  </div>
+  <div id="proj-enforce" class="project_cont col-lg-4 col-md-4 col-sm-6 col-xs-12 bx">
+    <div class="project_overlay">
+      <p><span class="proj_title">Enforce</span><br>CMS Tutorial Site    
+      </p>    
+    </div>
+  </div>
+</section>
+
+<section  id="features" class="page_cont">
+  <h1 class="page_cont_title">My Work Process</h1>
+  <div class="clearfix"></div>  
+  <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 design"><i class="fa fa-paint-brush" aria-hidden="true"></i><div class="p_cont" id=""><p class="design_p">Design</p></div></div>
+  <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xs-12 develop"><i class="fa fa-code" aria-hidden="true"></i><div class="p_cont"><p class="develop_p">&nbspCode&nbsp</p></div></div> 
+  <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 test"><i class="fa fa-flask" aria-hidden="true"></i><div class="p_cont"><p class="test_p">&nbspTest&nbsp </p></div></div>
+  <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xs-12 launch"><i class="fa fa-rocket" aria-hidden="true"></i><div class="p_cont"><p class="launch_p">Launch</p></div></div>
+</section>
+
+<section id="contact" class="page_cont" >  
+    <h1 class="page_cont_title">Contact me</h1>
+    <div class="clearfix"></div>
+     
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <p class="contact_paragraph"><i class="fa fa-envelope" aria-hidden="true" style="margin: 0; display: inline-block"></i> Email me:</p>
+      <form class="contactform" action="https://formspree.io/miabanes@gmail.com" method="post">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+          <input class="form-control" id="phone" name="phone" placeholder="Phone(optional)" type="number">
+          <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text" required>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <!--<input type="hidden" name="_next" value="http://martin-abanes.ml" />-->
+         <input class="btn btn-info btn-sm " value="Send" type="submit" style="float: left;">
+       </form>
+    <p class="call_paragraph"><i class="fa fa-phone" aria-hidden="true"></i> Call me at #09079161912</p> 
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <p class="contact_paragraph"><i class="fa fa-map-marker" aria-hidden="true" style="margin: 0; display: inline-block"></i> Visit my place:</p>
+    <div id="map" style="width: 100%; height: 300px;"></div>
+    </div>
+ 
+</section>
+<div class='clearfix'></div>
+<hr>
+<footer class="text-center">
+    <p class="copyright text-center">© Copyright martin-abanes.ml 2015-<span id="current_year"></span> </p>
+</footer>
+
+</body>
+</html>
+<!-- Modal -->
+<div class="modal" id="project_modal">
+<div id="overlay" class=""><div class="loader"></div></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>         
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-title">Modal title</h4>
+        <img class="modal-img-bx img-responsive"   src="" alt="">        
+        <p class="modal-desc">Lorem</p>
+
+              <div class="modal-footer">        
+        <a class="linktosite" href="" target="_window"><button type="button" class="btn btn-warning link-btn">Visit Site</button></a>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/portfolio.js"></script>
+
+<script>
+     //map
+  function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var myLatLng = {lat: 14.5243, lng: 121.0792};
+    var mapOptions = {
+      center: myLatLng, zoom: 11
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    
+    var myLatLng = {lat: 14.520445, lng: 121.053886};
+    var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Taguig'
+        });
+    
+    marker.setMap(map);
+  }
+
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXqu-nRTbp7EvzW7Om3o3EKqf0pg-cDfQ&callback=myMap"></script>

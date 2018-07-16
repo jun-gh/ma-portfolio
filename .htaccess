@@ -1,0 +1,14 @@
+#Options +FollowSymLinks 
+#RewriteEngine on 
+#RewriteCond %{HTTP_HOST} ^martin-abanes.ml [NC] 
+#RewriteRule ^(.*)$ https://martin-abanes.ml/$1 [L,R=301]
+
+#RewriteEngine On 
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ https://www.martin-abanes.ml/$1 [R,L]
+# HTID:2704360: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:2704360:
+
+
+
