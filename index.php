@@ -57,7 +57,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
       <li>s</li>      
     </ul>
     <br><br><br>
-    <h5 class="post_title">Senior Software Engineer</h5>
+    <h5 class="post_title">Software Engineer</h5>
   </div>  
   </div>
   
