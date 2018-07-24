@@ -2,8 +2,7 @@ html, body{
     margin: 0;
     padding: 0; 
     width: 100%;
-    /* color: #888888; */
-    color: black;    
+    color: #888888;
     font-family: Monospace, Sans-serif;
 }
 
