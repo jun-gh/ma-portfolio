@@ -58,7 +58,7 @@ $(document).ready(function(){
      title_bx : 'BASIX SYSTEM',
      desc_bx : 'Basix System is a beta app for payment, expenses and income monitoring. Data display is based on user login which has a very straight forward add, edit, delete on those objects. </p><p> This is a responsive single page app that where developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql). It was organized using Codeigniter MVC framework and uses Google Chart for dashboard representation.</p> ',
      src_bx : 'images/bx_modal.jpg',
-     link_bx : 'http://www.bxsystem.ml',
+     link_bx : 'http://bxsystem.tk',
 
      title_retail : 'Homerun International',
      desc_retail : 'Homerun International is a dynamic retail site. It\'s content are all coming off of the database (product, articles, pages, images etc). </p><p>This responsive site was developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql) and was organized using Codeigniter MVC framework.</p>' ,
