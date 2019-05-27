@@ -103,7 +103,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
 </section>
 
 <section  id="features" class="page_cont">
-  <h1 class="page_cont_title">My Work Process</h1>
+  <h1 class="page_cont_title">My Work Process </h1>
   <div class="clearfix"></div>  
   <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 design"><i class="fa fa-paint-brush" aria-hidden="true"></i><div class="p_cont" id=""><p class="design_p">Design</p></div></div>
   <div class="process_cont col-lg-6 col-md-6 col-sm-6 col-xs-12 col-xs-12 develop"><i class="fa fa-code" aria-hidden="true"></i><div class="p_cont"><p class="develop_p">&nbspCode&nbsp</p></div></div> 
@@ -137,7 +137,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
 <div class='clearfix'></div>
 <hr>
 <footer class="text-center">
-    <p class="copyright text-center">Â© Copyright martin-abanes.ml 2015-<span id="current_year"></span> </p>
+    <p class="copyright text-center">© Copyright martin-abanes.ml 2015-<span id="current_year"></span> </p>
 </footer>
 
 </body>
