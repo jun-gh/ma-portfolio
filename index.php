@@ -67,9 +67,9 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
   <h1 class="page_cont_title">About me</h1>  
   <p class="content_paragraph">"Martin here, regular guy, happily married with two kids."<br><br>
 
-   I started as Cashier in a retail store, then worked as Support for DELL & HP Computers. Next, I worked at HCL where I gotback my coding passion (back in school days) by designing Community pages for clients. Then, moved to Acquire as Salesforce Analyst & got exposed in Salesforce API Integration which is seemlessly fun. I also worked with HomeRun Inc. as project based Web Programmer. Currently, I'm working with iScale Solutions Inc. as Software Engineer doing classified/ecommerce sites & app (Android/IOS).
+   I started as Cashier in a retail store, then worked as Support for DELL & HP Computers. Next, I worked at HCL where I gotback my coding passion (back in school days) by designing Community pages for clients. Then, moved to Acquire as Salesforce Analyst & got exposed in Salesforce API Integration which is seemlessly fun. I also worked with HomeRun Inc. as project based Web Programmer. Then, worked with iScale Solutions Inc. as Software Engineer doing classified/ecommerce sites & app (Android/IOS). Currently I'm enjoying at GetDevs Inc. as Mobile Developer doing IOS/Android app.
    <br><br> 
-   It's my passion to program, code & see my work come alive. Doing it day in and dayout is nothing to me since I love it, like Confucius said <i><em>"Find a job that you love and you won't feel working a day in your life."</em></i>
+   It's my passion to program, code & see my work come alive. Doing it day in and dayout is nothing to me since I love it, like Confucius said <i><b>"Find a job that you love and you won't feel working a day in your life."</b></i>
   </p>
   <img src="images/mypic.png" class="img-circle" id="aboutpic">
 </section>
@@ -137,7 +137,7 @@ if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
 <div class='clearfix'></div>
 <hr>
 <footer class="text-center">
-    <p class="copyright text-center">© Copyright martin-abanes.ml 2015-<span id="current_year"></span> </p>
+    <p class="copyright text-center">ï¿½ Copyright martin-abanes.ml 2015-<span id="current_year"></span> </p>
 </footer>
 
 </body>
