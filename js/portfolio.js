@@ -54,54 +54,108 @@ $(document).ready(function(){
 
 
   var modal_cont =
-  {
-     title_bx : 'BASIX SYSTEM',
-     desc_bx : 'Basix System is a beta app for payment, expenses and income monitoring. Data display is based on user login which has a very straight forward add, edit, delete on those objects. </p><p> This is a responsive single page app that where developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql). It was organized using Codeigniter MVC framework and uses Google Chart for dashboard representation.</p> ',
-     src_bx : 'images/bx_modal.jpg',
-     link_bx : 'http://bxsystem.tk',
+  { 
+    fk : {
+      title : 'Fishingkaki Classified',
+      desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The site is developed using laravel backend, mysql database, react frontend & graphql api. It is setup for server side render to cater SEO & social share.',
+      src : 'images/fk_classified.png',
+      link : 'https://classifieds.fishingkaki.com/',
+    },
+    tenet : {
+      title : 'Tenet',
+      desc: 'The Tenet Way, a compliance application designed for Tenet Health employees, places information and resources at employee fingertips. The app is available on Appstore & Playstore. It is developed using Contentful CMS backend, react native frontend & rest api. It is setup with push notification to update user whenever there is update on the health system process',
+      src : 'images/tenet.png',
+      link : 'https://fnd.io/#/us/iphone-app/1470672836-the-tenet-way-by-tenet-healthsystems-med',
+    },
+    alz : {
+      title : `Alzheimer's`,
+      desc: `The Alzheimer's Association Science Hub provides the latest science news and expert viewpoints about research in Alzheimer's disease and related dementias. The app is available on Appstore & Playstore. It is developed using Contentful CMS backend, react native frontend & rest api. It is setup with firebase push notification to update user whenever there is update on the process`,
+      src : 'images/alz.png',
+      link : 'https://fnd.io/#/us/iphone-app/1472268471-alzheimers-assoc-science-hub-by-alzheime',
+    },
+    hri_admin: {
+      title : 'HRI Admin',
+      desc : 'HRI Admin is the backoffice of Multi-level Networking HRI Admins and Members. This is where Admins login to manage members like viewing data, editing profile etc. For members, this is where they manage their earnings, downlines, referrals among others. </p><p> It has very detailed dashboard representation for each of their earnings and met the requirement of such complex business process in \" Multi-level Networking \". This was developed through Codeigniter framework with very complex yet flexible MySql database.</p>' ,
+      src : 'images/admin_modal.png',
+      link : 'http://admin.homeruninternational.com',
+    },
+    bx: {
+     title : 'BASIX SYSTEM',
+     desc : 'Basix System is a beta app for payment, expenses and income monitoring. Data display is based on user login which has a very straight forward add, edit, delete on those objects. </p><p> This is a responsive single page app that where developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql). It was organized using Codeigniter MVC framework and uses Google Chart for dashboard representation.</p> ',
+     src : 'images/bx_modal.jpg',
+     link : 'http://bxsystem.tk',
+    },
+  
+    loader : function(){
+    $("#overlay").addClass('showloader');
 
-     title_retail : 'Homerun International',
-     desc_retail : 'Homerun International is a dynamic retail site. It\'s content are all coming off of the database (product, articles, pages, images etc). </p><p>This responsive site was developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql) and was organized using Codeigniter MVC framework.</p>' ,
-     src_retail : 'images/retail_modal.jpg',
-     link_retail : 'http://homeruninternational.com/home',
-
-     title_admin : 'HRI Admin',
-     desc_admin : 'HRI Admin is the backoffice of Multi-level Networking HRI Admins and Members. This is where Admins login to manage members like viewing data, editing profile etc. For members, this is where they manage their earnings, downlines, referrals among others. </p><p> It has very detailed dashboard representation for each of their earnings and met the requirement of such complex business process in \" Multi-level Networking \". This was developed through Codeigniter framework with very complex yet flexible MySql database.</p>' ,
-     src_admin : 'images/admin_modal.png',
-     link_admin : 'http://admin.homeruninternational.com',
-
-     loader : function(){
-            $("#overlay").addClass('showloader');
-
-            setTimeout(function(){
-              $("#overlay").removeClass('showloader');
-            }, 1000)
-      }
+    setTimeout(function(){
+      $("#overlay").removeClass('showloader');
+    }, 1000)
   }
 
-  $('#proj-bx').on('click', function(){
+
+    //  title_retail : 'Homerun International',
+    //  desc_retail : 'Homerun International is a dynamic retail site. It\'s content are all coming off of the database (product, articles, pages, images etc). </p><p>This responsive site was developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql) and was organized using Codeigniter MVC framework.</p>' ,
+    //  src_retail : 'images/retail_modal.jpg',
+    //  link_retail : 'http://homeruninternational.com/home',
+
+    //  title_admin : 'HRI Admin',
+    //  desc_admin : 'HRI Admin is the backoffice of Multi-level Networking HRI Admins and Members. This is where Admins login to manage members like viewing data, editing profile etc. For members, this is where they manage their earnings, downlines, referrals among others. </p><p> It has very detailed dashboard representation for each of their earnings and met the requirement of such complex business process in \" Multi-level Networking \". This was developed through Codeigniter framework with very complex yet flexible MySql database.</p>' ,
+    //  src_admin : 'images/admin_modal.png',
+    //  link_admin : 'http://admin.homeruninternational.com',
+
+    //  loader : function(){
+    //         $("#overlay").addClass('showloader');
+
+    //         setTimeout(function(){
+    //           $("#overlay").removeClass('showloader');
+    //         }, 1000)
+    //   }
+  }
+
+  $('#proj-fk').on('click', function(){
       modal_cont.loader();
-      $('.modal-title').html(modal_cont.title_bx);
-      $('.modal-desc').html(modal_cont.desc_bx);
-      $('.modal-img-bx').attr('src', modal_cont.src_bx);
-      $('.linktosite').attr('href', modal_cont.link_bx);
+      $('.modal-title').html(modal_cont.fk.title);
+      $('.modal-desc').html(modal_cont.fk.desc);
+      $('.modal-img-bx').attr('src', modal_cont.fk.src);
+      $('.linktosite').attr('href', modal_cont.fk.link);
       $('#project_modal').modal('show');
   }); 
 
-  $('#proj-retail').on('click', function(){
+  $('#proj-tenet').on('click', function(){
       modal_cont.loader();
-      $('.modal-title').html(modal_cont.title_retail);
-      $('.modal-desc').html(modal_cont.desc_retail);
-      $('.modal-img-bx').attr('src', modal_cont.src_retail);
-      $('.linktosite').attr('href', modal_cont.link_retail);
+      $('.modal-title').html(modal_cont.tenet.title);
+      $('.modal-desc').html(modal_cont.tenet.desc);
+      $('.modal-img-bx').attr('src', modal_cont.tenet.src);
+      $('.linktosite').attr('href', modal_cont.tenet.link);
+      $('#project_modal').modal('show');
+  }); 
+
+  $('#proj-alz').on('click', function(){
+      modal_cont.loader();
+      $('.modal-title').html(modal_cont.alz.title);
+      $('.modal-desc').html(modal_cont.alz.desc);
+      $('.modal-img-bx').attr('src', modal_cont.alz.src);
+      $('.linktosite').attr('href', modal_cont.alz.link);
       $('#project_modal').modal('show');
   }); 
 
   $('#proj-admin').on('click', function(){
       modal_cont.loader();
-      $('.modal-title').html(modal_cont.title_admin);
-      $('.modal-desc').html(modal_cont.desc_admin);
-      $('.modal-img-bx').attr('src', modal_cont.src_admin);
-      $('.linktosite').attr('href', modal_cont.link_admin);
+      $('.modal-title').html(modal_cont.hri_admin.title);
+      $('.modal-desc').html(modal_cont.hri_admin.desc);
+      $('.modal-img-bx').attr('src', modal_cont.hri_admin.src);
+      $('.linktosite').attr('href', modal_cont.hri_admin.link);
       $('#project_modal').modal('show');
   }); 
+
+  
+  $('#proj-bx').on('click', function(){
+    modal_cont.loader();
+    $('.modal-title').html(modal_cont.bx.title);
+    $('.modal-desc').html(modal_cont.bx.desc);
+    $('.modal-img-bx').attr('src', modal_cont.bx.src);
+    $('.linktosite').attr('href', modal_cont.bx.link);
+    $('#project_modal').modal('show');
+}); 
