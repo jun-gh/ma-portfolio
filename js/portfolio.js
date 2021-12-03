@@ -55,6 +55,12 @@ $(document).ready(function(){
 
   var modal_cont =
   { 
+    fk_android : {
+      title : 'Fishingkaki Android App',
+      desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The site is developed using laravel backend, mysql database, react frontend & graphql api. It is setup for server side render to cater SEO & social share.',
+      src : 'images/fk_android.png',
+      link : 'https://play.google.com/store/apps/details?id=com.fishingkaki',
+    },
     fk : {
       title : 'Fishingkaki Classified',
       desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The site is developed using laravel backend, mysql database, react frontend & graphql api. It is setup for server side render to cater SEO & social share.',
@@ -113,6 +119,15 @@ $(document).ready(function(){
     //         }, 1000)
     //   }
   }
+
+  $('#proj-fk_android').on('click', function(){
+    modal_cont.loader();
+    $('.modal-title').html(modal_cont.fk_android.title);
+    $('.modal-desc').html(modal_cont.fk_android.desc);
+    $('.modal-img-bx').attr('src', modal_cont.fk_android.src);
+    $('.linktosite').attr('href', modal_cont.fk_android.link);
+    $('#project_modal').modal('show');
+}); 
 
   $('#proj-fk').on('click', function(){
       modal_cont.loader();
