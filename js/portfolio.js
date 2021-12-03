@@ -57,7 +57,7 @@ $(document).ready(function(){
   { 
     fk_android : {
       title : 'Fishingkaki Android App',
-      desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The site is developed using laravel backend, mysql database, react frontend & graphql api. It is setup for server side render to cater SEO & social share.',
+      desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The app is developed using laravel backend, mysql database, react-native frontend & graphql api.',
       src : 'images/fk_android.png',
       link : 'https://play.google.com/store/apps/details?id=com.fishingkaki',
     },
