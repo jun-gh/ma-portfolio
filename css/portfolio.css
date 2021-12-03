@@ -394,14 +394,14 @@ footer a:hover{
   text-decoration: none;
 }
 
-div.project_cont{
+/* div.project_cont{
     background: gray;
     border: 5px solid white;
     height: 150px;
     padding: 0px !important;
     overflow: hidden;
     position: relative;
-}
+} */
 img.img_bx{  
     transition: transform 1s;
 }

@@ -169,13 +169,21 @@ p.content_paragraph{
 }
 
 div.project_cont {
-    background: transparent;
+    background: white;
+    border: 1px solid #ccc;
+    height: 200px;
+    padding: 0px !important;
+    overflow: hidden;
+    position: relative;
+    /* margin-bottom: 15px; */
+    margin: 10px 0px 20px 0px;
+    /* background: transparent;
     border: 5px solid white;
     height: 200px;
     padding: 0px !important;
     overflow: hidden;
     position: relative;
-    margin-bottom: 15px;
+    margin: 100px 0; */
 }
 
 img.img_bx{  
