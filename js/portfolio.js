@@ -55,11 +55,11 @@ $(document).ready(function(){
 
   var modal_cont =
   { 
-    fk_android : {
-      title : 'Fishingkaki Android App',
-      desc : 'FishingKaki.com is the largest fishing community conglomerate dedicated to catering to anglers worldwide. The app is developed using laravel backend, mysql database, react-native frontend & graphql api.',
-      src : 'images/fk_android.png',
-      link : 'https://play.google.com/store/apps/details?id=com.fishingkaki',
+    lunaska : {
+      title : 'LunasKa',
+      desc : "LunasKa is a AI health companion that's easy to talk to, whenever you need it.",
+      src : 'images/lunaska-readme.png',
+      link : 'https://lunaska.vercel.app',
     },
     fk : {
       title : 'Fishingkaki Classified',
@@ -119,6 +119,15 @@ $(document).ready(function(){
     //         }, 1000)
     //   }
   }
+
+  $('#proj-lunaska').on('click', function(){
+    modal_cont.loader();
+    $('.modal-title').html(modal_cont.lunaska.title);
+    $('.modal-desc').html(modal_cont.lunaska.desc);
+    $('.modal-img-bx').attr('src', modal_cont.lunaska.src);
+    $('.linktosite').attr('href', modal_cont.lunaska.link);
+    $('#project_modal').modal('show');
+}); 
 
   $('#proj-fk_android').on('click', function(){
     modal_cont.loader();
