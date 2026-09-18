@@ -57,9 +57,9 @@ $(document).ready(function(){
   { 
     lunaska : {
       title : 'LunasKa',
-      desc : "LunasKa is a AI health companion that's easy to talk to, whenever you need it.",
+      desc : "LunasKa is an AI health companion that's easy to talk to, whenever you need it.",
       src : 'images/lunaska-readme.png',
-      link : 'https://lunaska.vercel.app',
+      link : 'https://lunaska.life',
     },
     fk : {
       title : 'Fishingkaki Classified',
