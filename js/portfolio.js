@@ -55,6 +55,18 @@ $(document).ready(function(){
 
   var modal_cont =
   { 
+    sagent : {
+      title : 'Sagent',
+      desc : "Smart Autonomous Gateway for Enterprise Network Ticketing.",
+      src : 'images/sagent-main.png',
+      link : 'https://sagent-ph.vercel.app/',
+    },
+    blend : {
+      title : 'Blend',
+      desc : "A full-stack Retrieval-Augmented Generation system that combines dense vector search (semantic similarity) with sparse keyword/FTS search (BM25).",
+      src : 'images/blend-main.png',
+      link : 'https://blend-jmco.vercel.app',
+    },
     lunaska : {
       title : 'LunasKa',
       desc : "LunasKa is an AI health companion that's easy to talk to, whenever you need it.",
@@ -79,26 +91,26 @@ $(document).ready(function(){
       src : 'images/alz.png',
       link : 'https://fnd.io/#/us/iphone-app/1472268471-alzheimers-assoc-science-hub-by-alzheime',
     },
-    hri_admin: {
-      title : 'HRI Admin',
-      desc : 'HRI Admin is the backoffice of Multi-level Networking HRI Admins and Members. This is where Admins login to manage members like viewing data, editing profile etc. For members, this is where they manage their earnings, downlines, referrals among others. </p><p> It has very detailed dashboard representation for each of their earnings and met the requirement of such complex business process in \" Multi-level Networking \". This was developed through Codeigniter framework with very complex yet flexible MySql database.</p>' ,
-      src : 'images/admin_modal.png',
-      link : 'http://admin.homeruninternational.com',
-    },
-    bx: {
-     title : 'BASIX SYSTEM',
-     desc : 'Basix System is a beta app for payment, expenses and income monitoring. Data display is based on user login which has a very straight forward add, edit, delete on those objects. </p><p> This is a responsive single page app that where developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql). It was organized using Codeigniter MVC framework and uses Google Chart for dashboard representation.</p> ',
-     src : 'images/bx_modal.jpg',
-     link : 'http://bxsystem.tk',
-    },
+    // hri_admin: {
+    //   title : 'HRI Admin',
+    //   desc : 'HRI Admin is the backoffice of Multi-level Networking HRI Admins and Members. This is where Admins login to manage members like viewing data, editing profile etc. For members, this is where they manage their earnings, downlines, referrals among others. </p><p> It has very detailed dashboard representation for each of their earnings and met the requirement of such complex business process in \" Multi-level Networking \". This was developed through Codeigniter framework with very complex yet flexible MySql database.</p>' ,
+    //   src : 'images/admin_modal.png',
+    //   link : 'http://admin.homeruninternational.com',
+    // },
+    // bx: {
+    //  title : 'BASIX SYSTEM',
+    //  desc : 'Basix System is a beta app for payment, expenses and income monitoring. Data display is based on user login which has a very straight forward add, edit, delete on those objects. </p><p> This is a responsive single page app that where developed using (HTML, CSS, Javascript, Jquery, Bootstrap, Ajax, Php and MySql). It was organized using Codeigniter MVC framework and uses Google Chart for dashboard representation.</p> ',
+    //  src : 'images/bx_modal.jpg',
+    //  link : 'http://bxsystem.tk',
+    // },
   
     loader : function(){
-    $("#overlay").addClass('showloader');
+      $("#overlay").addClass('showloader');
 
-    setTimeout(function(){
-      $("#overlay").removeClass('showloader');
-    }, 1000)
-  }
+      setTimeout(function(){
+        $("#overlay").removeClass('showloader');
+      }, 1000)
+    }
 
 
     //  title_retail : 'Homerun International',
@@ -120,23 +132,41 @@ $(document).ready(function(){
     //   }
   }
 
-  $('#proj-lunaska').on('click', function(){
-    modal_cont.loader();
-    $('.modal-title').html(modal_cont.lunaska.title);
-    $('.modal-desc').html(modal_cont.lunaska.desc);
-    $('.modal-img-bx').attr('src', modal_cont.lunaska.src);
-    $('.linktosite').attr('href', modal_cont.lunaska.link);
-    $('#project_modal').modal('show');
-}); 
+  $('#proj-sagent').on('click', function(){
+      modal_cont.loader();
+      $('.modal-title').html(modal_cont.sagent.title);
+      $('.modal-desc').html(modal_cont.sagent.desc);
+      $('.modal-img-bx').attr('src', modal_cont.sagent.src);
+      $('.linktosite').attr('href', modal_cont.sagent.link);
+      $('#project_modal').modal('show');
+  }); 
 
-  $('#proj-fk_android').on('click', function(){
-    modal_cont.loader();
-    $('.modal-title').html(modal_cont.fk_android.title);
-    $('.modal-desc').html(modal_cont.fk_android.desc);
-    $('.modal-img-bx').attr('src', modal_cont.fk_android.src);
-    $('.linktosite').attr('href', modal_cont.fk_android.link);
-    $('#project_modal').modal('show');
-}); 
+  $('#proj-blend').on('click', function(){
+      modal_cont.loader();
+      $('.modal-title').html(modal_cont.blend.title);
+      $('.modal-desc').html(modal_cont.blend.desc);
+      $('.modal-img-bx').attr('src', modal_cont.blend.src);
+      $('.linktosite').attr('href', modal_cont.blend.link);
+      $('#project_modal').modal('show');
+  }); 
+
+  $('#proj-lunaska').on('click', function(){
+      modal_cont.loader();
+      $('.modal-title').html(modal_cont.lunaska.title);
+      $('.modal-desc').html(modal_cont.lunaska.desc);
+      $('.modal-img-bx').attr('src', modal_cont.lunaska.src);
+      $('.linktosite').attr('href', modal_cont.lunaska.link);
+      $('#project_modal').modal('show');
+  }); 
+
+//   $('#proj-fk_android').on('click', function(){
+//     modal_cont.loader();
+//     $('.modal-title').html(modal_cont.fk_android.title);
+//     $('.modal-desc').html(modal_cont.fk_android.desc);
+//     $('.modal-img-bx').attr('src', modal_cont.fk_android.src);
+//     $('.linktosite').attr('href', modal_cont.fk_android.link);
+//     $('#project_modal').modal('show');
+// }); 
 
   $('#proj-fk').on('click', function(){
       modal_cont.loader();
@@ -165,21 +195,21 @@ $(document).ready(function(){
       $('#project_modal').modal('show');
   }); 
 
-  $('#proj-admin').on('click', function(){
-      modal_cont.loader();
-      $('.modal-title').html(modal_cont.hri_admin.title);
-      $('.modal-desc').html(modal_cont.hri_admin.desc);
-      $('.modal-img-bx').attr('src', modal_cont.hri_admin.src);
-      $('.linktosite').attr('href', modal_cont.hri_admin.link);
-      $('#project_modal').modal('show');
-  }); 
+  // $('#proj-admin').on('click', function(){
+  //     modal_cont.loader();
+  //     $('.modal-title').html(modal_cont.hri_admin.title);
+  //     $('.modal-desc').html(modal_cont.hri_admin.desc);
+  //     $('.modal-img-bx').attr('src', modal_cont.hri_admin.src);
+  //     $('.linktosite').attr('href', modal_cont.hri_admin.link);
+  //     $('#project_modal').modal('show');
+  // }); 
 
   
-  $('#proj-bx').on('click', function(){
-    modal_cont.loader();
-    $('.modal-title').html(modal_cont.bx.title);
-    $('.modal-desc').html(modal_cont.bx.desc);
-    $('.modal-img-bx').attr('src', modal_cont.bx.src);
-    $('.linktosite').attr('href', modal_cont.bx.link);
-    $('#project_modal').modal('show');
-}); 
+//   $('#proj-bx').on('click', function(){
+//     modal_cont.loader();
+//     $('.modal-title').html(modal_cont.bx.title);
+//     $('.modal-desc').html(modal_cont.bx.desc);
+//     $('.modal-img-bx').attr('src', modal_cont.bx.src);
+//     $('.linktosite').attr('href', modal_cont.bx.link);
+//     $('#project_modal').modal('show');
+// }); 
